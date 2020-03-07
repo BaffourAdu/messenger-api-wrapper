@@ -1,6 +1,6 @@
 {
   "name": "messenger-api-wrapper",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "a wrapper for facebook messenger api with typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,7 @@
     "prepare": "yarn run build",
     "preversion": "yarn run lint",
     "version": "yarn run format && git commit -am 'bumped up version' && git push && git push --tags",
-    "release": "npm version patch && npm publish"
+    "publish": "npm version patch && npm publish"
   },
   "files": [
     "lib/**/*"
