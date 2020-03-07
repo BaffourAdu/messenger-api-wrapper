@@ -21,8 +21,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "yarn run build",
     "preversion": "yarn run lint",
-    "version": "yarn run format && git commit -am 'bumped up version'",
-    "postversion": "git push && git push --tags"
+    "version": "yarn run format && git commit -am 'bumped up version' && git push && git push --tags",
+    "release": "npm version patch && npm publish"
   },
   "files": [
     "lib/**/*"
