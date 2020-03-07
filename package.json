@@ -1,6 +1,6 @@
 {
   "name": "messenger-api-wrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a wrapper for facebook messenger api with typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,10 +19,10 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare" : "yarn run build",
-    "preversion" : "yarn run lint",
-    "version" : "yarn run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "yarn run build",
+    "preversion": "yarn run lint",
+    "version": "yarn run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "files": [
     "lib/**/*"
