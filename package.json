@@ -1,0 +1,13 @@
+{
+  "name": "messenger-api-wrapper",
+  "version": "0.0.1",
+  "description": "a wrapper for facebook messenger api with typescript",
+  "main": "index.js",
+  "repository": "git@github.com:BaffourAdu/messenger-api-wrapper.git",
+  "author": "Baffour Adu Boampong <baffouraduboampong@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}
