@@ -2,12 +2,34 @@
   "name": "messenger-api-wrapper",
   "version": "0.0.1",
   "description": "a wrapper for facebook messenger api with typescript",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:BaffourAdu/messenger-api-wrapper.git",
   "author": "Baffour Adu Boampong <baffouraduboampong@gmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "prettier": "^1.19.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
-  }
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare" : "yarn run build",
+    "preversion" : "yarn run lint",
+    "version" : "yarn run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "ts",
+    "typescript",
+    "ts-node"
+  ]
 }
